@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1.csproj", "{1138D987-44D7-41BD-9E53-74B0B6DBB9CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PD2RandomizerData", "..\PD2RandomizerData\PD2RandomizerData.csproj", "{3B98D3C0-E593-442D-9F26-087BE7C1B7A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1138D987-44D7-41BD-9E53-74B0B6DBB9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1138D987-44D7-41BD-9E53-74B0B6DBB9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1138D987-44D7-41BD-9E53-74B0B6DBB9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1138D987-44D7-41BD-9E53-74B0B6DBB9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B98D3C0-E593-442D-9F26-087BE7C1B7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B98D3C0-E593-442D-9F26-087BE7C1B7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B98D3C0-E593-442D-9F26-087BE7C1B7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B98D3C0-E593-442D-9F26-087BE7C1B7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD8635EF-7EB5-48DD-AA37-D02CB5AF59F9}
+	EndGlobalSection
+EndGlobal

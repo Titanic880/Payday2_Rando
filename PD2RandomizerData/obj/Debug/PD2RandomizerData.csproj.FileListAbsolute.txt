@@ -1,0 +1,6 @@
+C:\Users\Mitch\Desktop\Payday 2 Rando\PD2RandomizerData\bin\Debug\PD2RandomizerData.dll
+C:\Users\Mitch\Desktop\Payday 2 Rando\PD2RandomizerData\bin\Debug\PD2RandomizerData.pdb
+C:\Users\Mitch\Desktop\Payday 2 Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.csprojAssemblyReference.cache
+C:\Users\Mitch\Desktop\Payday 2 Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.csproj.CoreCompileInputs.cache
+C:\Users\Mitch\Desktop\Payday 2 Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.dll
+C:\Users\Mitch\Desktop\Payday 2 Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.pdb

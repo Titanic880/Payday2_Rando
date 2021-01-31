@@ -1,0 +1,13 @@
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\bin\Debug\PD2RandomizerData.dll
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\bin\Debug\PD2RandomizerData.pdb
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Mitch\Desktop\Payday 2 Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
