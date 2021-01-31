@@ -342,9 +342,8 @@ namespace PD2RandomizerData
         public static void SetDeployable() { Deployable = Deployables[rand.Next(Deployables.Length - 1)]; }
         public static void SetArmor() 
         {
-            if(Current_Deck == null)
-                ArmorLv = Armor[rand.Next(Armor.Length - 1)]; 
-            else if(Current_Deck == "Grinder")
+            //Checks for the grinder deck and checks the safeguard
+            if(Current_Deck == "Grinder" && GrinderSafeGuard)
             {
                 int rnd = rand.Next(2);
                 if (rnd == 1)
@@ -352,6 +351,8 @@ namespace PD2RandomizerData
                 else
                     ArmorLv = Armor[0];
             }
+            else
+                ArmorLv = Armor[rand.Next(Armor.Length - 1)]; 
         }
 
         public static void SetHitmanSafe(bool guard)
@@ -360,7 +361,7 @@ namespace PD2RandomizerData
         }
         public static void SetGrinderSafe(bool guard)
         {
-
+            GrinderSafeGuard = guard;
         }
         #endregion SetRandomized
     }

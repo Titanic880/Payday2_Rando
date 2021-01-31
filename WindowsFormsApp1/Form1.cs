@@ -37,6 +37,7 @@ namespace WindowsFormsApp1
         {
             PD2DataFile.SetHitmanSafe(cbHmsg.Checked);
             PD2DataFile.SetGrinderSafe(cbGsg.Checked);
+            MessageBox.Show("Updated SafeGuards!");
         }
 
         private void Randomize()
@@ -130,6 +131,7 @@ namespace WindowsFormsApp1
 
         private void LoadRandom()
         {
+            listBox1.Items.Clear();
             if (!File.Exists(SaveFile))
             {
                 File.Create(SaveFile).Close();
