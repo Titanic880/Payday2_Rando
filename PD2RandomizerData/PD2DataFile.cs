@@ -307,7 +307,7 @@ namespace PD2RandomizerData
         /// </summary>
         public static void SetThrowable()
         {
-            if (Current_Deck == null)
+            if (Current_Deck != DeckEquips[0] || Current_Deck != DeckEquips[1] || Current_Deck != DeckEquips[2] || Current_Deck != DeckEquips[3] || Current_Deck != DeckEquips[4])
             {
                 Throwable = Throwables[rand.Next(Throwables.Length - 1)];
                 return;
