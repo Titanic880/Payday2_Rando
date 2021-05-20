@@ -192,7 +192,7 @@ namespace PD2RandomizerData
         /// <returns></returns>
         public static string GetSpecificPerkDeck(int Location)
         {
-            if (Location < PerkDecks.Length)
+            if (Location >= PerkDecks.Length)
                 return PerkDecks[0];
             else
                 return PerkDecks[Location];
