@@ -141,6 +141,20 @@ namespace PD2RandomizerData
             "Empty"
 
         };
+        /// <summary>
+        /// OD Modifier is at index[0]
+        /// </summary>
+        readonly static string[] Difficulties =
+        {
+            "One Down",
+            "Normal",
+            "Hard",
+            "Very Hard",
+            "Overkill",
+            "Mayhem",
+            "DeathWish",
+            "DeathSentence"
+        };
         #endregion Base information
         #region Randomized Items
         /// <summary>
