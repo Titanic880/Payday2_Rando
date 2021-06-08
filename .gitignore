@@ -16,7 +16,6 @@ config
 release
 *.Ree
 
-
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
