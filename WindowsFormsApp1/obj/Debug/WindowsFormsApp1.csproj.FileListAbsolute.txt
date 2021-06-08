@@ -24,3 +24,16 @@ E:\Coding\Shelved\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.cspr
 E:\Coding\Shelved\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 E:\Coding\Shelved\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\Coding\Shelved\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\bin\Debug\PD2RandomizerData.dll
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\bin\Debug\PD2RandomizerData.pdb
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\Coding\Finished (V1.0)\Payday2_Rando\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

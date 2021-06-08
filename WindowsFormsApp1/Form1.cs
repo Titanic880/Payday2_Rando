@@ -1,7 +1,7 @@
-﻿using System;
-using System.IO;
+﻿using System.Windows.Forms;
 using PD2RandomizerData;
-using System.Windows.Forms;
+using System.IO;
+using System;
 
 namespace WindowsFormsApp1
 {
@@ -14,36 +14,21 @@ namespace WindowsFormsApp1
             SetCBs();
         }
 
-        private void btnRandom_Click(object sender, EventArgs e)
-        {
-            Randomize();
-        }
-
-        private void BtnReRand_Click(object sender, EventArgs e)
-        {
-            Randomize();
-        }
-        private void BtnLoad_Click(object sender, EventArgs e)
-        {
-            LoadRandom();
-        }
-
-        private void BtnSave_Click(object sender, EventArgs e)
-        {
-            SaveRandom();
-        }
+        private void BtnRandom_Click(object sender, EventArgs e) => Randomize();
+        private void BtnSave_Click(object sender, EventArgs e) => SaveRandom();
+        private void BtnLoad_Click(object sender, EventArgs e) => LoadRandom();
 
         private void BtnOptions_Click(object sender, EventArgs e)
         {
-            PD2DataFile.SetHitmanSafe(cbHmsg.Checked);
-            PD2DataFile.SetGrinderSafe(cbGsg.Checked);
+            Random_Settings.HitmanSafeGuard = cbHmsg.Checked;
+            Random_Settings.GrinderSafeGuard = cbGsg.Checked;
             MessageBox.Show("Updated SafeGuards!");
         }
 
         private void Randomize()
         {
-            PD2DataFile.SetAll();
-            string[] disp = null;
+            PD2Randomize.SetAll();
+            string[] disp;
             if (cbPerkDeck.Checked &&
                 cbPrimary.Checked &&
                 cbSecondary.Checked &&
@@ -53,13 +38,13 @@ namespace WindowsFormsApp1
                 cbDeployable.Checked)
             {
                 disp = new string[] {
-                    "Deck: " + PD2DataFile.Current_Deck,
-                    "Primary: " + PD2DataFile.PrimaryCat,
-                    "Secondary: " + PD2DataFile.SecondaryCat,
-                    "Melee: " + PD2DataFile.MeleeCat,
-                    "Armor: " + PD2DataFile.ArmorLv,
-                    "Throwable: "+PD2DataFile.Throwable,
-                    "Deployable: "+PD2DataFile.Deployable
+                    "Deck: " + Random_Settings.Current_Deck,
+                    "Primary: " + Random_Settings.PrimaryCat,
+                    "Secondary: " + Random_Settings.SecondaryCat,
+                    "Melee: " + Random_Settings.MeleeCat,
+                    "Armor: " + Random_Settings.ArmorLv,
+                    "Throwable: "+Random_Settings.Throwable,
+                    "Deployable: "+Random_Settings.Deployable
                 };
             }
             else
@@ -77,28 +62,24 @@ namespace WindowsFormsApp1
                 }
                     disp = new string[7];
                 if (cbPerkDeck.Checked)
-                    disp[0] = "Deck: " + PD2DataFile.Current_Deck;
+                    disp[0] = "Deck: " + Random_Settings.Current_Deck;
                 if (cbPrimary.Checked)
-                    disp[1] = "Primary: " + PD2DataFile.PrimaryCat;
+                    disp[1] = "Primary: " + Random_Settings.PrimaryCat;
                 if (cbSecondary.Checked)
-                    disp[2] = "Secondary: " + PD2DataFile.SecondaryCat;
+                    disp[2] = "Secondary: " + Random_Settings.SecondaryCat;
                 if (cbMelee.Checked)
-                    disp[3] = "Melee: " + PD2DataFile.MeleeCat;
+                    disp[3] = "Melee: " + Random_Settings.MeleeCat;
                 if (cbArmor.Checked)
-                    disp[4] = "Armor: " + PD2DataFile.ArmorLv;
+                    disp[4] = "Armor: " + Random_Settings.ArmorLv;
                 if (cbThrowable.Checked)
-                    disp[5] = "Throwable: " + PD2DataFile.Throwable;
+                    disp[5] = "Throwable: " + Random_Settings.Throwable;
                 if (cbDeployable.Checked)
-                    disp[6] = "Deployable: " + PD2DataFile.Deployable;
+                    disp[6] = "Deployable: " + Random_Settings.Deployable;
             }
 
             SetDisplay(disp);
         }
 
-        /// <summary>
-        /// Sets the string[] to the list
-        /// </summary>
-        /// <param name="Display"></param>
         private void SetDisplay(string[] Display)
         {
             listBox1.Items.Clear();
@@ -114,13 +95,13 @@ namespace WindowsFormsApp1
 
             File.Create(SaveFile).Close();
             string[] info = {
-                    "Deck: " + PD2DataFile.Current_Deck,
-                    "Primary: " + PD2DataFile.PrimaryCat,
-                    "Secondary: " + PD2DataFile.SecondaryCat,
-                    "Melee: " + PD2DataFile.MeleeCat,
-                    "Armor: " + PD2DataFile.ArmorLv,
-                    "Throwable: "+PD2DataFile.Throwable,
-                    "Deployable: "+PD2DataFile.Deployable
+                    "Deck: " + Random_Settings.Current_Deck,
+                    "Primary: " + Random_Settings.PrimaryCat,
+                    "Secondary: " + Random_Settings.SecondaryCat,
+                    "Melee: " + Random_Settings.MeleeCat,
+                    "Armor: " + Random_Settings.ArmorLv,
+                    "Throwable: "+Random_Settings.Throwable,
+                    "Deployable: "+Random_Settings.Deployable
                 };
             StreamWriter sw = new StreamWriter(SaveFile);
             foreach (string a in info)
@@ -149,8 +130,8 @@ namespace WindowsFormsApp1
         private void SetCBs()
         {
             cbPerkDeck.Checked = true;
-            cbGsg.Checked = PD2DataFile.GrinderSafeGuard;
-            cbHmsg.Checked = PD2DataFile.HitmanSafeGuard;
+            cbGsg.Checked = Random_Settings.GrinderSafeGuard;
+            cbHmsg.Checked = Random_Settings.HitmanSafeGuard;
         }
     }
 }
