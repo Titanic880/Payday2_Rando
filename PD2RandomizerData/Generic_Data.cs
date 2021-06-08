@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PD2RandomizerData
+﻿namespace PD2RandomizerData
 {
     public static class Generic_Data
     {

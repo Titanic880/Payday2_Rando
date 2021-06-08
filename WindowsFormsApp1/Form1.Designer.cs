@@ -43,13 +43,11 @@ namespace WindowsFormsApp1
             this.PanOutput = new System.Windows.Forms.Panel();
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnLoad = new System.Windows.Forms.Button();
-            this.BtnReRand = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.PanOptions = new System.Windows.Forms.Panel();
-            this.cbHmsg = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.BtnOptions = new System.Windows.Forms.Button();
             this.cbGsg = new System.Windows.Forms.CheckBox();
+            this.BtnOptions = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbHmsg = new System.Windows.Forms.CheckBox();
             this.PanChecks.SuspendLayout();
             this.PanOutput.SuspendLayout();
             this.PanOptions.SuspendLayout();
@@ -58,9 +56,9 @@ namespace WindowsFormsApp1
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(77, 3);
+            this.listBox1.Location = new System.Drawing.Point(0, 1);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(160, 212);
+            this.listBox1.Size = new System.Drawing.Size(240, 160);
             this.listBox1.TabIndex = 0;
             // 
             // cbPerkDeck
@@ -172,8 +170,6 @@ namespace WindowsFormsApp1
             // 
             this.PanOutput.Controls.Add(this.BtnSave);
             this.PanOutput.Controls.Add(this.BtnLoad);
-            this.PanOutput.Controls.Add(this.BtnReRand);
-            this.PanOutput.Controls.Add(this.label1);
             this.PanOutput.Controls.Add(this.listBox1);
             this.PanOutput.Location = new System.Drawing.Point(145, 12);
             this.PanOutput.Name = "PanOutput";
@@ -182,42 +178,23 @@ namespace WindowsFormsApp1
             // 
             // BtnSave
             // 
-            this.BtnSave.Location = new System.Drawing.Point(0, 27);
+            this.BtnSave.Location = new System.Drawing.Point(0, 164);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(68, 38);
-            this.BtnSave.TabIndex = 4;
+            this.BtnSave.Size = new System.Drawing.Size(92, 54);
+            this.BtnSave.TabIndex = 2;
             this.BtnSave.Text = "Save Random";
             this.BtnSave.UseVisualStyleBackColor = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // BtnLoad
             // 
-            this.BtnLoad.Location = new System.Drawing.Point(0, 71);
+            this.BtnLoad.Location = new System.Drawing.Point(148, 164);
             this.BtnLoad.Name = "BtnLoad";
-            this.BtnLoad.Size = new System.Drawing.Size(68, 38);
+            this.BtnLoad.Size = new System.Drawing.Size(92, 54);
             this.BtnLoad.TabIndex = 3;
             this.BtnLoad.Text = "Load Random";
             this.BtnLoad.UseVisualStyleBackColor = true;
             this.BtnLoad.Click += new System.EventHandler(this.BtnLoad_Click);
-            // 
-            // BtnReRand
-            // 
-            this.BtnReRand.Location = new System.Drawing.Point(0, 115);
-            this.BtnReRand.Name = "BtnReRand";
-            this.BtnReRand.Size = new System.Drawing.Size(68, 38);
-            this.BtnReRand.TabIndex = 2;
-            this.BtnReRand.Text = "Re Randomize";
-            this.BtnReRand.UseVisualStyleBackColor = true;
-            this.BtnReRand.Click += new System.EventHandler(this.BtnRandom_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "OutCome";
             // 
             // PanOptions
             // 
@@ -228,17 +205,27 @@ namespace WindowsFormsApp1
             this.PanOptions.Location = new System.Drawing.Point(396, 10);
             this.PanOptions.Name = "PanOptions";
             this.PanOptions.Size = new System.Drawing.Size(200, 217);
-            this.PanOptions.TabIndex = 5;
+            this.PanOptions.TabIndex = 8;
             // 
-            // cbHmsg
+            // cbGsg
             // 
-            this.cbHmsg.AutoSize = true;
-            this.cbHmsg.Location = new System.Drawing.Point(6, 21);
-            this.cbHmsg.Name = "cbHmsg";
-            this.cbHmsg.Size = new System.Drawing.Size(111, 17);
-            this.cbHmsg.TabIndex = 0;
-            this.cbHmsg.Text = "Hitman Safeguard";
-            this.cbHmsg.UseVisualStyleBackColor = true;
+            this.cbGsg.AutoSize = true;
+            this.cbGsg.Location = new System.Drawing.Point(6, 39);
+            this.cbGsg.Name = "cbGsg";
+            this.cbGsg.Size = new System.Drawing.Size(112, 17);
+            this.cbGsg.TabIndex = 1;
+            this.cbGsg.Text = "Grinder Safeguard";
+            this.cbGsg.UseVisualStyleBackColor = true;
+            // 
+            // BtnOptions
+            // 
+            this.BtnOptions.Location = new System.Drawing.Point(6, 143);
+            this.BtnOptions.Name = "BtnOptions";
+            this.BtnOptions.Size = new System.Drawing.Size(191, 23);
+            this.BtnOptions.TabIndex = 69;
+            this.BtnOptions.Text = "Apply Options";
+            this.BtnOptions.UseVisualStyleBackColor = true;
+            this.BtnOptions.Click += new System.EventHandler(this.BtnOptions_Click);
             // 
             // label2
             // 
@@ -249,25 +236,15 @@ namespace WindowsFormsApp1
             this.label2.TabIndex = 1;
             this.label2.Text = "Options";
             // 
-            // BtnOptions
+            // cbHmsg
             // 
-            this.BtnOptions.Location = new System.Drawing.Point(6, 143);
-            this.BtnOptions.Name = "BtnOptions";
-            this.BtnOptions.Size = new System.Drawing.Size(191, 23);
-            this.BtnOptions.TabIndex = 2;
-            this.BtnOptions.Text = "Apply Options";
-            this.BtnOptions.UseVisualStyleBackColor = true;
-            this.BtnOptions.Click += new System.EventHandler(this.BtnOptions_Click);
-            // 
-            // cbGsg
-            // 
-            this.cbGsg.AutoSize = true;
-            this.cbGsg.Location = new System.Drawing.Point(6, 39);
-            this.cbGsg.Name = "cbGsg";
-            this.cbGsg.Size = new System.Drawing.Size(112, 17);
-            this.cbGsg.TabIndex = 3;
-            this.cbGsg.Text = "Grinder Safeguard";
-            this.cbGsg.UseVisualStyleBackColor = true;
+            this.cbHmsg.AutoSize = true;
+            this.cbHmsg.Location = new System.Drawing.Point(6, 21);
+            this.cbHmsg.Name = "cbHmsg";
+            this.cbHmsg.Size = new System.Drawing.Size(111, 17);
+            this.cbHmsg.TabIndex = 0;
+            this.cbHmsg.Text = "Hitman Safeguard";
+            this.cbHmsg.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -282,7 +259,6 @@ namespace WindowsFormsApp1
             this.PanChecks.ResumeLayout(false);
             this.PanChecks.PerformLayout();
             this.PanOutput.ResumeLayout(false);
-            this.PanOutput.PerformLayout();
             this.PanOptions.ResumeLayout(false);
             this.PanOptions.PerformLayout();
             this.ResumeLayout(false);
@@ -305,8 +281,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel PanOutput;
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.Button BtnLoad;
-        private System.Windows.Forms.Button BtnReRand;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel PanOptions;
         private System.Windows.Forms.Button BtnOptions;
         private System.Windows.Forms.Label label2;
