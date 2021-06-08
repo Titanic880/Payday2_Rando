@@ -12,7 +12,6 @@ E:\Coding\Shelved\Payday2_Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.dl
 E:\Coding\Shelved\Payday2_Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.pdb
 E:\Coding\Finished (V1.0)\Payday2_Rando\PD2RandomizerData\bin\Debug\PD2RandomizerData.dll
 E:\Coding\Finished (V1.0)\Payday2_Rando\PD2RandomizerData\bin\Debug\PD2RandomizerData.pdb
-E:\Coding\Finished (V1.0)\Payday2_Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.csprojAssemblyReference.cache
 E:\Coding\Finished (V1.0)\Payday2_Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.csproj.CoreCompileInputs.cache
 E:\Coding\Finished (V1.0)\Payday2_Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.dll
 E:\Coding\Finished (V1.0)\Payday2_Rando\PD2RandomizerData\obj\Debug\PD2RandomizerData.pdb
