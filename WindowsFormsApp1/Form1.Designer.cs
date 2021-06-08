@@ -137,7 +137,7 @@ namespace WindowsFormsApp1
             this.btnRandom.TabIndex = 10;
             this.btnRandom.Text = "Randomize!";
             this.btnRandom.UseVisualStyleBackColor = true;
-            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            this.btnRandom.Click += new System.EventHandler(this.BtnRandom_Click);
             // 
             // lblPanRand
             // 
@@ -208,7 +208,7 @@ namespace WindowsFormsApp1
             this.BtnReRand.TabIndex = 2;
             this.BtnReRand.Text = "Re Randomize";
             this.BtnReRand.UseVisualStyleBackColor = true;
-            this.BtnReRand.Click += new System.EventHandler(this.BtnReRand_Click);
+            this.BtnReRand.Click += new System.EventHandler(this.BtnRandom_Click);
             // 
             // label1
             // 
