@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
 
         private void Randomize()
         {
-            PD2DataFile.SetAll();
+            PD2Randomize.SetAll();
             string[] disp;
             if (cbPerkDeck.Checked &&
                 cbPrimary.Checked &&

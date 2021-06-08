@@ -4,7 +4,7 @@ using System;
 
 namespace PD2RandomizerData
 {
-    public static class PD2DataFile
+    public static class PD2Randomize
     {
         private readonly static Random rand = new Random();
         #region SetRandomized
@@ -52,9 +52,9 @@ namespace PD2RandomizerData
             else
                 PrimaryCat = Primaries[rand.Next(Primaries.Length - 1)];
         }
-        public static void Rand_Secondary() { SecondaryCat = Secondaries[rand.Next(Secondaries.Length - 1)]; }
-        public static void Rand_Melee() { MeleeCat = Melees[rand.Next(Melees.Length - 1)]; }
-        public static void Rand_Deployable() { Deployable = Deployables[rand.Next(Deployables.Length - 1)]; }
+        public static void Rand_Secondary() => SecondaryCat = Secondaries[rand.Next(Secondaries.Length - 1)]; 
+        public static void Rand_Melee() => MeleeCat = Melees[rand.Next(Melees.Length - 1)]; 
+        public static void Rand_Deployable() => Deployable = Deployables[rand.Next(Deployables.Length - 1)]; 
         public static void Rand_Armor() 
         {
             //Checks for the grinder deck and checks the safeguard
