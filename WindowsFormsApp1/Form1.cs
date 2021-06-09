@@ -11,7 +11,11 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            SetCBs();
+            Get_SaveBits();
+
+            cbPerkDeck.Checked = true;
+            cbGsg.Checked = Random_Settings.GrinderSafeGuard;
+            cbHmsg.Checked = Random_Settings.HitmanSafeGuard;
         }
 
         private void BtnRandom_Click(object sender, EventArgs e) => Randomize();
@@ -78,6 +82,43 @@ namespace WindowsFormsApp1
             }
 
             SetDisplay(disp);
+            Set_SaveBits();
+        }
+
+        private void Set_SaveBits()
+        {
+            string output = null;
+            for (int i = 0; i < Controls.Count; i++)
+                if (Controls[i] is Panel panel)
+                    for (int x = 0; x < panel.Controls.Count; x++)
+                        if (panel.Controls[x] is CheckBox check)
+                            if (check.Checked)
+                                output += 1;
+                            else
+                                output += 0;
+            File.WriteAllText("bits.Ree", output);
+        }
+
+        private void Get_SaveBits()
+        {
+            if (!File.Exists("bits.Ree"))
+                return;
+            string bits = File.ReadAllText("bits.Ree");
+            int[] Bit = new int[bits.Length];
+            if (Bit.Length == 0)
+                return;
+
+            int index = 0;
+            for (int i = 0; i < bits.Length; i++)
+                Bit[i] = int.Parse(bits[i].ToString());
+            for(int i = 0; i < Controls.Count; i++)
+                if(Controls[i] is Panel panel)
+                    for(int x = 0; x < panel.Controls.Count; x++)
+                        if(panel.Controls[x] is CheckBox cb)
+                        {
+                            cb.Checked = Convert.ToBoolean(Bit[index]);
+                            index++;
+                        }
         }
 
         private void SetDisplay(string[] Display)
@@ -125,13 +166,6 @@ namespace WindowsFormsApp1
                 listBox1.Items.Add(sr.ReadLine());
             sr.Close();
             MessageBox.Show("Loaded Config!");
-        }
-
-        private void SetCBs()
-        {
-            cbPerkDeck.Checked = true;
-            cbGsg.Checked = Random_Settings.GrinderSafeGuard;
-            cbHmsg.Checked = Random_Settings.HitmanSafeGuard;
         }
     }
 }
