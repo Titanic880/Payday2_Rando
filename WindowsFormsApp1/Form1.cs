@@ -8,6 +8,25 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         private const string SaveFile = "Sav.Ree";
+
+        private bool Empty_Selection 
+        { 
+            get
+            {
+                if (cbPerkDeck.Checked &&
+                    cbPrimary.Checked &&
+                    cbSecondary.Checked &&
+                    cbMelee.Checked &&
+                    cbArmor.Checked &&
+                    cbThrowable.Checked &&
+                    cbDeployable.Checked &&
+                    cbDiff.Checked)
+                    return true;
+                else
+                    return false;
+            } 
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -24,8 +43,9 @@ namespace WindowsFormsApp1
 
         private void BtnOptions_Click(object sender, EventArgs e)
         {
-            Random_Settings.HitmanSafeGuard = cbHmsg.Checked;
-            Random_Settings.GrinderSafeGuard = cbGsg.Checked;
+            Random_Settings.Hitman_SafeGuard = cbHmsg.Checked;
+            Random_Settings.Grinder_SafeGuard = cbGsg.Checked;
+            Random_Settings.Allow_OneDown = CBOneDown.Checked;
             MessageBox.Show("Updated SafeGuards!");
         }
 
@@ -33,13 +53,7 @@ namespace WindowsFormsApp1
         {
             PD2Randomize.SetAll();
             string[] disp;
-            if (cbPerkDeck.Checked &&
-                cbPrimary.Checked &&
-                cbSecondary.Checked &&
-                cbMelee.Checked &&
-                cbArmor.Checked &&
-                cbThrowable.Checked &&
-                cbDeployable.Checked)
+            if (Empty_Selection)
             {
                 disp = new string[] {
                     "Deck: " + Random_Settings.Current_Deck,
@@ -48,23 +62,13 @@ namespace WindowsFormsApp1
                     "Melee: " + Random_Settings.MeleeCat,
                     "Armor: " + Random_Settings.ArmorLv,
                     "Throwable: "+Random_Settings.Throwable,
-                    "Deployable: "+Random_Settings.Deployable
+                    "Deployable: "+Random_Settings.Deployable,
+                    "Difficulty: "+Random_Settings.Difficulty
                 };
             }
             else
             {
-                if (!cbPerkDeck.Checked &&
-                    !cbPrimary.Checked &&
-                    !cbSecondary.Checked &&
-                    !cbMelee.Checked &&
-                    !cbArmor.Checked &&
-                    !cbThrowable.Checked &&
-                    !cbDeployable.Checked)
-                {
-                    MessageBox.Show("Please Select a Category!");
-                    return;
-                }
-                    disp = new string[7];
+                disp = new string[8];
                 if (cbPerkDeck.Checked)
                     disp[0] = "Deck: " + Random_Settings.Current_Deck;
                 if (cbPrimary.Checked)
@@ -79,8 +83,9 @@ namespace WindowsFormsApp1
                     disp[5] = "Throwable: " + Random_Settings.Throwable;
                 if (cbDeployable.Checked)
                     disp[6] = "Deployable: " + Random_Settings.Deployable;
+                if (cbDiff.Checked)
+                    disp[7] = "Difficulty: " + Random_Settings.Difficulty;
             }
-
             SetDisplay(disp);
             Set_SaveBits();
         }
@@ -142,7 +147,8 @@ namespace WindowsFormsApp1
                     "Melee: " + Random_Settings.MeleeCat,
                     "Armor: " + Random_Settings.ArmorLv,
                     "Throwable: "+Random_Settings.Throwable,
-                    "Deployable: "+Random_Settings.Deployable
+                    "Deployable: "+Random_Settings.Deployable,
+                    "Difficulty: "+Random_Settings.Difficulty
                 };
             StreamWriter sw = new StreamWriter(SaveFile);
             foreach (string a in info)
@@ -166,6 +172,14 @@ namespace WindowsFormsApp1
                 listBox1.Items.Add(sr.ReadLine());
             sr.Close();
             MessageBox.Show("Loaded Config!");
+        }
+
+        private void SetCBs()
+        {
+            cbPerkDeck.Checked = true;
+            cbGsg.Checked = Random_Settings.Grinder_SafeGuard;
+            cbHmsg.Checked = Random_Settings.Hitman_SafeGuard;
+            CBOneDown.Checked = Random_Settings.Allow_OneDown;
         }
     }
 }

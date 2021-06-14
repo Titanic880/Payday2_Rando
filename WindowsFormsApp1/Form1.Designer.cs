@@ -44,10 +44,12 @@ namespace WindowsFormsApp1
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnLoad = new System.Windows.Forms.Button();
             this.PanOptions = new System.Windows.Forms.Panel();
+            this.CBOneDown = new System.Windows.Forms.CheckBox();
             this.cbGsg = new System.Windows.Forms.CheckBox();
             this.BtnOptions = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbHmsg = new System.Windows.Forms.CheckBox();
+            this.cbDiff = new System.Windows.Forms.CheckBox();
             this.PanChecks.SuspendLayout();
             this.PanOutput.SuspendLayout();
             this.PanOptions.SuspendLayout();
@@ -113,6 +115,7 @@ namespace WindowsFormsApp1
             // 
             // PanChecks
             // 
+            this.PanChecks.Controls.Add(this.cbDiff);
             this.PanChecks.Controls.Add(this.btnRandom);
             this.PanChecks.Controls.Add(this.lblPanRand);
             this.PanChecks.Controls.Add(this.cbDeployable);
@@ -124,12 +127,12 @@ namespace WindowsFormsApp1
             this.PanChecks.Controls.Add(this.cbSecondary);
             this.PanChecks.Location = new System.Drawing.Point(12, 12);
             this.PanChecks.Name = "PanChecks";
-            this.PanChecks.Size = new System.Drawing.Size(127, 218);
+            this.PanChecks.Size = new System.Drawing.Size(127, 247);
             this.PanChecks.TabIndex = 6;
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(3, 193);
+            this.btnRandom.Location = new System.Drawing.Point(4, 221);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(120, 23);
             this.btnRandom.TabIndex = 10;
@@ -173,7 +176,7 @@ namespace WindowsFormsApp1
             this.PanOutput.Controls.Add(this.listBox1);
             this.PanOutput.Location = new System.Drawing.Point(145, 12);
             this.PanOutput.Name = "PanOutput";
-            this.PanOutput.Size = new System.Drawing.Size(240, 218);
+            this.PanOutput.Size = new System.Drawing.Size(240, 225);
             this.PanOutput.TabIndex = 7;
             // 
             // BtnSave
@@ -198,14 +201,25 @@ namespace WindowsFormsApp1
             // 
             // PanOptions
             // 
+            this.PanOptions.Controls.Add(this.CBOneDown);
             this.PanOptions.Controls.Add(this.cbGsg);
             this.PanOptions.Controls.Add(this.BtnOptions);
             this.PanOptions.Controls.Add(this.label2);
             this.PanOptions.Controls.Add(this.cbHmsg);
             this.PanOptions.Location = new System.Drawing.Point(396, 10);
             this.PanOptions.Name = "PanOptions";
-            this.PanOptions.Size = new System.Drawing.Size(200, 217);
+            this.PanOptions.Size = new System.Drawing.Size(200, 176);
             this.PanOptions.TabIndex = 8;
+            // 
+            // CBOneDown
+            // 
+            this.CBOneDown.AutoSize = true;
+            this.CBOneDown.Location = new System.Drawing.Point(6, 57);
+            this.CBOneDown.Name = "CBOneDown";
+            this.CBOneDown.Size = new System.Drawing.Size(111, 17);
+            this.CBOneDown.TabIndex = 70;
+            this.CBOneDown.Text = "Allow One Down?";
+            this.CBOneDown.UseVisualStyleBackColor = true;
             // 
             // cbGsg
             // 
@@ -246,11 +260,21 @@ namespace WindowsFormsApp1
             this.cbHmsg.Text = "Hitman Safeguard";
             this.cbHmsg.UseVisualStyleBackColor = true;
             // 
+            // cbDiff
+            // 
+            this.cbDiff.AutoSize = true;
+            this.cbDiff.Location = new System.Drawing.Point(3, 193);
+            this.cbDiff.Name = "cbDiff";
+            this.cbDiff.Size = new System.Drawing.Size(66, 17);
+            this.cbDiff.TabIndex = 11;
+            this.cbDiff.Text = "Difficulty";
+            this.cbDiff.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 242);
+            this.ClientSize = new System.Drawing.Size(608, 311);
             this.Controls.Add(this.PanOptions);
             this.Controls.Add(this.PanOutput);
             this.Controls.Add(this.PanChecks);
@@ -286,6 +310,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox cbHmsg;
         private System.Windows.Forms.CheckBox cbGsg;
+        private System.Windows.Forms.CheckBox CBOneDown;
+        private System.Windows.Forms.CheckBox cbDiff;
     }
 }
 
