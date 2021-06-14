@@ -13,14 +13,14 @@ namespace WindowsFormsApp1
         { 
             get
             {
-                if (cbPerkDeck.Checked &&
+                if (!(cbPerkDeck.Checked &&
                     cbPrimary.Checked &&
                     cbSecondary.Checked &&
                     cbMelee.Checked &&
                     cbArmor.Checked &&
                     cbThrowable.Checked &&
                     cbDeployable.Checked &&
-                    cbDiff.Checked)
+                    cbDiff.Checked))
                     return true;
                 else
                     return false;
@@ -31,10 +31,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             Get_SaveBits();
-
             cbPerkDeck.Checked = true;
-            cbGsg.Checked = Random_Settings.GrinderSafeGuard;
-            cbHmsg.Checked = Random_Settings.HitmanSafeGuard;
+            cbGsg.Checked = Random_Settings.Grinder_SafeGuard;
+            cbHmsg.Checked = Random_Settings.Hitman_SafeGuard;
+            CBOneDown.Checked = Random_Settings.Allow_OneDown;
         }
 
         private void BtnRandom_Click(object sender, EventArgs e) => Randomize();
@@ -172,14 +172,6 @@ namespace WindowsFormsApp1
                 listBox1.Items.Add(sr.ReadLine());
             sr.Close();
             MessageBox.Show("Loaded Config!");
-        }
-
-        private void SetCBs()
-        {
-            cbPerkDeck.Checked = true;
-            cbGsg.Checked = Random_Settings.Grinder_SafeGuard;
-            cbHmsg.Checked = Random_Settings.Hitman_SafeGuard;
-            CBOneDown.Checked = Random_Settings.Allow_OneDown;
         }
     }
 }
