@@ -10,6 +10,10 @@
 *.userosscache
 *.sln.docstates
 
+PD2RandomizerData/bin
+PD2RandomizerData/obj
+WindowsFormsApp1/bin
+WindowsFormsApp1/obj
 bin
 obj
 config
