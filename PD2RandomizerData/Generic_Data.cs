@@ -44,6 +44,7 @@
         public readonly static string[] Primaries =
         {
             "Assault Rifles",
+            "DMR",
             "Shotguns",
             "LMG's",
             "Sniper",
@@ -66,7 +67,8 @@
             "Stun Type", //things that stop enemies from attacking
             "Blades",
             "Blunted",
-            "MONEY!!!"
+            "MONEY!!!",
+            "Spoon"
         };
         public readonly static string[] Throwables =
         {
@@ -77,7 +79,7 @@
         };
         public readonly static string[] Armor =
         {
-            "Suit",
+            "Two Piece Suit",
             "Ballistic Vest",
             "LightWeight Ballistic",
             "Heavy Ballistic",
@@ -92,7 +94,7 @@
             "Body Bag Case",
             "Doctor Bag",
             "Ecm",
-            "FaK",
+            "First aid Kit",
             "Sentry",
             "Suppressed Sentry",
             "Trip Mine",

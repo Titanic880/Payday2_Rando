@@ -47,7 +47,7 @@ namespace PD2RandomizerData
         }
         public static void Rand_Primary()
         {
-            if (Current_Deck == PerkDecks[4] && HitmanSafeGuard)
+            if (Current_Deck == PerkDecks[4] && Hitman_SafeGuard)
                 PrimaryCat = Primaries[rand.Next(3) + 5];
             else
                 PrimaryCat = Primaries[rand.Next(Primaries.Length - 1)];
@@ -58,7 +58,7 @@ namespace PD2RandomizerData
         public static void Rand_Armor() 
         {
             //Checks for the grinder deck and checks the safeguard
-            if(Current_Deck == PerkDecks[10] && GrinderSafeGuard)
+            if(Current_Deck == PerkDecks[10] && Grinder_SafeGuard)
             {
                 int rnd = rand.Next(2);
                 if (rnd == 1)
@@ -68,6 +68,12 @@ namespace PD2RandomizerData
             }
             else
                 ArmorLv = Armor[rand.Next(Armor.Length - 1)]; 
+        }
+        public static void Rand_Difficulty()
+        {
+            Difficulty = Difficulties[rand.Next(Difficulties.Length - 1) + 1];
+            if (Allow_OneDown && rand.Next(2) == 1)
+                Difficulty += ": " + Difficulties[0];
         }
         #endregion SetRandomized
     }
