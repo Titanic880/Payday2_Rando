@@ -76,7 +76,7 @@
         public readonly static string[] Throwables =
         {
             "Explosive",
-            "Flashbang",
+            "Stun (Flashbang/Electric Shocker)",
             "Renewable",
             "Perk Deck"
         };

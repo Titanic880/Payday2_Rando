@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             this.cbMelee = new System.Windows.Forms.CheckBox();
             this.cbArmor = new System.Windows.Forms.CheckBox();
             this.PanChecks = new System.Windows.Forms.Panel();
+            this.cbDiff = new System.Windows.Forms.CheckBox();
             this.btnRandom = new System.Windows.Forms.Button();
             this.lblPanRand = new System.Windows.Forms.Label();
             this.cbDeployable = new System.Windows.Forms.CheckBox();
@@ -49,7 +50,6 @@ namespace WindowsFormsApp1
             this.BtnOptions = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbHmsg = new System.Windows.Forms.CheckBox();
-            this.cbDiff = new System.Windows.Forms.CheckBox();
             this.PanChecks.SuspendLayout();
             this.PanOutput.SuspendLayout();
             this.PanOptions.SuspendLayout();
@@ -66,7 +66,7 @@ namespace WindowsFormsApp1
             // cbPerkDeck
             // 
             this.cbPerkDeck.AutoSize = true;
-            this.cbPerkDeck.Location = new System.Drawing.Point(3, 32);
+            this.cbPerkDeck.Location = new System.Drawing.Point(3, 22);
             this.cbPerkDeck.Name = "cbPerkDeck";
             this.cbPerkDeck.Size = new System.Drawing.Size(77, 17);
             this.cbPerkDeck.TabIndex = 1;
@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
             // cbPrimary
             // 
             this.cbPrimary.AutoSize = true;
-            this.cbPrimary.Location = new System.Drawing.Point(3, 55);
+            this.cbPrimary.Location = new System.Drawing.Point(3, 45);
             this.cbPrimary.Name = "cbPrimary";
             this.cbPrimary.Size = new System.Drawing.Size(104, 17);
             this.cbPrimary.TabIndex = 2;
@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
             // cbSecondary
             // 
             this.cbSecondary.AutoSize = true;
-            this.cbSecondary.Location = new System.Drawing.Point(3, 78);
+            this.cbSecondary.Location = new System.Drawing.Point(3, 68);
             this.cbSecondary.Name = "cbSecondary";
             this.cbSecondary.Size = new System.Drawing.Size(121, 17);
             this.cbSecondary.TabIndex = 3;
@@ -96,7 +96,7 @@ namespace WindowsFormsApp1
             // cbMelee
             // 
             this.cbMelee.AutoSize = true;
-            this.cbMelee.Location = new System.Drawing.Point(3, 101);
+            this.cbMelee.Location = new System.Drawing.Point(3, 91);
             this.cbMelee.Name = "cbMelee";
             this.cbMelee.Size = new System.Drawing.Size(99, 17);
             this.cbMelee.TabIndex = 4;
@@ -106,7 +106,7 @@ namespace WindowsFormsApp1
             // cbArmor
             // 
             this.cbArmor.AutoSize = true;
-            this.cbArmor.Location = new System.Drawing.Point(3, 124);
+            this.cbArmor.Location = new System.Drawing.Point(3, 114);
             this.cbArmor.Name = "cbArmor";
             this.cbArmor.Size = new System.Drawing.Size(53, 17);
             this.cbArmor.TabIndex = 5;
@@ -127,12 +127,22 @@ namespace WindowsFormsApp1
             this.PanChecks.Controls.Add(this.cbSecondary);
             this.PanChecks.Location = new System.Drawing.Point(12, 12);
             this.PanChecks.Name = "PanChecks";
-            this.PanChecks.Size = new System.Drawing.Size(127, 247);
+            this.PanChecks.Size = new System.Drawing.Size(127, 225);
             this.PanChecks.TabIndex = 6;
+            // 
+            // cbDiff
+            // 
+            this.cbDiff.AutoSize = true;
+            this.cbDiff.Location = new System.Drawing.Point(3, 183);
+            this.cbDiff.Name = "cbDiff";
+            this.cbDiff.Size = new System.Drawing.Size(66, 17);
+            this.cbDiff.TabIndex = 11;
+            this.cbDiff.Text = "Difficulty";
+            this.cbDiff.UseVisualStyleBackColor = true;
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(4, 221);
+            this.btnRandom.Location = new System.Drawing.Point(3, 199);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(120, 23);
             this.btnRandom.TabIndex = 10;
@@ -152,7 +162,7 @@ namespace WindowsFormsApp1
             // cbDeployable
             // 
             this.cbDeployable.AutoSize = true;
-            this.cbDeployable.Location = new System.Drawing.Point(3, 170);
+            this.cbDeployable.Location = new System.Drawing.Point(3, 160);
             this.cbDeployable.Name = "cbDeployable";
             this.cbDeployable.Size = new System.Drawing.Size(79, 17);
             this.cbDeployable.TabIndex = 7;
@@ -162,7 +172,7 @@ namespace WindowsFormsApp1
             // cbThrowable
             // 
             this.cbThrowable.AutoSize = true;
-            this.cbThrowable.Location = new System.Drawing.Point(3, 147);
+            this.cbThrowable.Location = new System.Drawing.Point(3, 137);
             this.cbThrowable.Name = "cbThrowable";
             this.cbThrowable.Size = new System.Drawing.Size(76, 17);
             this.cbThrowable.TabIndex = 6;
@@ -183,7 +193,7 @@ namespace WindowsFormsApp1
             // 
             this.BtnSave.Location = new System.Drawing.Point(0, 164);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(92, 54);
+            this.BtnSave.Size = new System.Drawing.Size(100, 54);
             this.BtnSave.TabIndex = 2;
             this.BtnSave.Text = "Save Random";
             this.BtnSave.UseVisualStyleBackColor = true;
@@ -191,9 +201,9 @@ namespace WindowsFormsApp1
             // 
             // BtnLoad
             // 
-            this.BtnLoad.Location = new System.Drawing.Point(148, 164);
+            this.BtnLoad.Location = new System.Drawing.Point(139, 164);
             this.BtnLoad.Name = "BtnLoad";
-            this.BtnLoad.Size = new System.Drawing.Size(92, 54);
+            this.BtnLoad.Size = new System.Drawing.Size(101, 54);
             this.BtnLoad.TabIndex = 3;
             this.BtnLoad.Text = "Load Random";
             this.BtnLoad.UseVisualStyleBackColor = true;
@@ -206,9 +216,9 @@ namespace WindowsFormsApp1
             this.PanOptions.Controls.Add(this.BtnOptions);
             this.PanOptions.Controls.Add(this.label2);
             this.PanOptions.Controls.Add(this.cbHmsg);
-            this.PanOptions.Location = new System.Drawing.Point(396, 10);
+            this.PanOptions.Location = new System.Drawing.Point(391, 13);
             this.PanOptions.Name = "PanOptions";
-            this.PanOptions.Size = new System.Drawing.Size(200, 176);
+            this.PanOptions.Size = new System.Drawing.Size(122, 109);
             this.PanOptions.TabIndex = 8;
             // 
             // CBOneDown
@@ -233,9 +243,9 @@ namespace WindowsFormsApp1
             // 
             // BtnOptions
             // 
-            this.BtnOptions.Location = new System.Drawing.Point(6, 143);
+            this.BtnOptions.Location = new System.Drawing.Point(3, 80);
             this.BtnOptions.Name = "BtnOptions";
-            this.BtnOptions.Size = new System.Drawing.Size(191, 23);
+            this.BtnOptions.Size = new System.Drawing.Size(114, 23);
             this.BtnOptions.TabIndex = 69;
             this.BtnOptions.Text = "Apply Options";
             this.BtnOptions.UseVisualStyleBackColor = true;
@@ -260,21 +270,11 @@ namespace WindowsFormsApp1
             this.cbHmsg.Text = "Hitman Safeguard";
             this.cbHmsg.UseVisualStyleBackColor = true;
             // 
-            // cbDiff
-            // 
-            this.cbDiff.AutoSize = true;
-            this.cbDiff.Location = new System.Drawing.Point(3, 193);
-            this.cbDiff.Name = "cbDiff";
-            this.cbDiff.Size = new System.Drawing.Size(66, 17);
-            this.cbDiff.TabIndex = 11;
-            this.cbDiff.Text = "Difficulty";
-            this.cbDiff.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 311);
+            this.ClientSize = new System.Drawing.Size(520, 243);
             this.Controls.Add(this.PanOptions);
             this.Controls.Add(this.PanOutput);
             this.Controls.Add(this.PanChecks);
