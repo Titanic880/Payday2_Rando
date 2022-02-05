@@ -23,7 +23,8 @@
             "Sicario",
             "Stoic",
             "Tag Team",
-            "Hacker"
+            "Hacker",
+            "Leech"
         };
         public readonly static string[] DeckEquips =
         {
@@ -31,7 +32,8 @@
             "Sicario",
             "Stoic",
             "Tag Team",
-            "Hacker"
+            "Hacker",
+            "Leech"
         };
         public readonly static string[] DeckThrowables =
         {
@@ -39,7 +41,8 @@
             "Smoke Bomb",
             "Stoic's Hip Flask",
             "Gas Dispenser",
-            "Pocket ECM Device"
+            "Pocket ECM Device",
+            "Symbiote"
         };
         public readonly static string[] Primaries =
         {
@@ -99,7 +102,6 @@
             "Suppressed Sentry",
             "Trip Mine",
             "Empty"
-
         };
         public readonly static string[] Difficulties =
         {
