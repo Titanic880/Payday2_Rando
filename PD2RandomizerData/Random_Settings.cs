@@ -5,6 +5,7 @@
         #region Randomized Items
         public static bool Hitman_SafeGuard;
         public static bool Grinder_SafeGuard;
+        public static bool PerkDeck_SafeGuard;
         public static bool Allow_OneDown;
 
         public static string Current_Deck;
@@ -16,5 +17,12 @@
         public static string ArmorLv;
         public static string Difficulty;
         #endregion Randomized Items
+
+        public static bool Check_PerkDeck_SafeGuard()
+        {
+            if (string.IsNullOrEmpty(Current_Deck)) return false;
+            if(Generic_Data.DeckThrowables.Contains(Current_Deck))
+
+        }
     }
 }

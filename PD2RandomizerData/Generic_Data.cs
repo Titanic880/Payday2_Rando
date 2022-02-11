@@ -115,4 +115,8 @@
             "DeathSentence"
         };
     }
+    public partial class string 
+        {
+
+        }
 }
